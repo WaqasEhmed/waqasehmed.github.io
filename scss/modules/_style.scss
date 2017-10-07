@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  color: $paragraphblk;
+  background: $wht;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 1150px;
+  margin: 0 auto;
+  letter-spacing: .1px;
+  animation: fadeIn 1.1s;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 35px;
+  color: $paragraphblk;
+
+  @media (max-width: 1000px){
+    font-size: 1.4em;
+  }
+}
+
+header {
+  margin-top: 40px;
+  animation: fadeInDown 1s;
+
+  @media (max-width: 950px){
+    margin-left: 30px;
+  }
+}
+
+a {
+  color: $paragraphgry;
+
+  &:hover {
+    color: $paragraphblk;
+  }
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Karla", sans-serif;
+  float: right;
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: .2px;
+  color: $imgcreditgry;
+  margin-top: 8px;
+
+  @media (max-width: 1000px){
+    font-size: 1em;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    margin-right: 15px;
+    img {
+      display: inline;
+      height: 50px;
+      width: 50px;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 650px){
+      font-size: 1.4em;
+    }
+  }
+}
+
+ul.nav {
+
+  li {
+    color: #868686;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    @media (max-width: 650px){
+      font-size: 1.4em;
+    }
+
+    &:hover {
+      color: $navactiveblk;
+      opacity: 1;
+    }
+  }
+}
+
+ul.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-right: 15px;
+
+    @media (max-width: 950px){
+      font-size: 1.4em;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: $paragraphblk;
+
+      &:hover {
+        border-bottom: 2px solid;
+      }
+    }
+
+    &.name {
+      font-weight: 600;
+    }
+  }
+}
+
+section {
+
+  &#view-more {
+    margin-top: 50px;
+  }
+
+  &#hero {
+    margin-top: 135px;
+
+    @media (max-width: 950px){
+      margin-top: 65px;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 3.2em;
+      line-height: 1.3;
+      letter-spacing: .3px;
+      margin-bottom: 65px;
+
+      @media (max-width: 650px) {
+        font-size: 2.2em;
+        line-height: 1.4;
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  &#bio {
+    margin-top: 50px;
+
+    @media (max-width: 1000px){
+      margin-top: 25px;
+    }
+
+    p {
+      padding: 0 140px 0 140px;
+
+      @media (max-width: 1000px){
+        padding: 0 25px 0 25px;
+      }
+
+      a {
+        color: $paragraphblk;
+        font-weight: 600;
+        padding-bottom: 0px;
+
+        &:hover {
+          color: darken($paragraphblk, 25%);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 35px 0;
+  margin-top: 150px;
+
+  @media (max-width: 950px){
+    margin-left: 10px;
+  }
+
+  @media (max-width: 850px){
+    margin-top: 45px;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.portfolio-container {
+  max-width: 1150px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: .08px;
+  display: inline-block;
+  padding: 13px 40px 13px 40px;
+  border-radius: 3px;
+  transition: background-color 420ms linear;
+
+  @media (max-width: 650px){
+    margin-left: 5px;
+    font-size: 1.4em;
+  }
+}
+
+.btn-blue {
+  color: $wht;
+  background: $buttonblue;
+
+  &:hover {
+    color: $wht;
+    background: darken($buttonblue, 10%);
+  }
+}
+
+.btn-blk {
+  color: $wht;
+  background: $buttonblk;
+
+  &:hover {
+    color: $wht;
+    background: darken($buttonblk, 10%);
+  }
+}
+
+.active {
+  color: $titleblk;
+  font-weight: 600;
+}
+
+.contact {
+  animation: fadeInUp 1.2s;
+}
+
+.fa {
+  margin-right: 15px;
+}

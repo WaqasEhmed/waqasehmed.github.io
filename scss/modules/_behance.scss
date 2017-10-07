@@ -1,0 +1,31 @@
+
+
+#behance_feed {
+    width: 100%;
+    display: inline-block;
+    animation: fadeInUp 1s;
+
+    @media screen and (max-width: 550px) {
+        margin: 0% auto;
+    }
+}
+
+.behance_entry {
+  width: 33.333%;
+  float: left;
+  animation: fadeIn 1.1s;
+
+  @media (max-width: 950px){
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .titlelink {
+    display: none;
+  }
+}
